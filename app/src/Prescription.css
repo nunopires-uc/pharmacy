@@ -1,0 +1,43 @@
+.presc-title {
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.presc-title .presc-user {
+    font-weight: bold;
+}
+
+.presc-title .presc-number {
+    font-weight: 300;
+    font-size: 25px;
+    vertical-align: auto;
+}
+
+.presc-subtitle {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.presc-subtitle span {
+    color: var(--green)
+}
+
+.finalize-button {
+    background-color: var(--green);
+    width: 200px;
+    height: 50px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.finalize-button:hover {
+    background-color: var(--green_hover)
+}

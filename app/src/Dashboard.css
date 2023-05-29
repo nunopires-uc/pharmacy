@@ -1,0 +1,228 @@
+body {
+    background-color: #1f1f1f !important;
+    
+}
+
+.nav-link {
+    font-family: 'Ubuntu' !important;
+    font-weight: 300 !important;
+}
+
+.bg-dark {
+    background-color: var(--darkblue) !important
+}
+
+.btn-primary {
+    background-color: var(--lightblue) !important;
+    font-family: 'Ubuntu' !important;
+    font-weight: 300 !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--lightblue_hover) !important;
+}
+
+.nav-link:hover i {
+    transform: scale(1.05) !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-items {
+        margin-left: 100px;
+    }
+}
+
+.navbar {
+    background-color: var(--white) !important;
+}
+
+
+.username {
+    color: rgb(73, 73, 73);
+    font-family: 'Ubuntu' !important;
+    font-weight: normal !important;
+    font-size: 20px;
+    margin-right: 8px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.userrole {
+    color: rgb(73, 73, 73);
+    font-family: 'Ubuntu' !important;
+    font-weight: 300 !important;
+    font-size: 17px;
+    margin-right: 8px;
+    text-align: right;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------*/
+
+
+
+.card-container {
+    max-width: 1600px;
+}
+
+.mt-50 {
+
+    margin-top: 50px;
+}
+
+.mb-50 {
+
+    margin-bottom: 50px;
+}
+
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--white);
+    background-clip: border-box;
+    transition: all 0.5s;
+    border-radius: 10px;
+    
+}
+
+.card-img-actions {
+    position: relative;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-img {
+    width: 100% !important;
+    min-height: 150px;
+
+    
+}
+
+
+.star {
+    color: red;
+}
+
+.bg-cart {
+    background-color: orange;
+    color: #fff;
+}
+
+.bg-cart:hover {
+
+    color: #fff;
+}
+
+.bg-buy {
+    background-color: green;
+    color: #fff;
+    padding-right: 29px;
+}
+
+.bg-buy:hover {
+
+    color: #fff;
+}
+
+a {
+
+    text-decoration: none !important;
+}
+
+.text-default {
+    font-size: 25px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+    text-transform: capitalize;
+}
+
+.text-price {
+    color: var(--green);
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    text-align: center;
+    text-shadow:  2px 2px rgba(0, 0, 0, 0.534);
+    
+}
+
+
+
+.text-format {
+    margin-top: 6px;
+}
+
+.btn-favorite {
+    
+    transition: all 0.5s;
+}
+
+.btn-favorite:hover {
+    background-color: red  !important;
+    transform:scale(1.05);
+    transition: all 0.5s;
+}
+
+.btn-buy {
+    transition: all 0.5s;
+    background-color: var(--green) !important;
+}
+
+.btn-buy:hover {
+    transform:scale(1.05);
+    transition: all 0.5s;
+    background-color: var(--green_hover) !important;
+}
+
+.btn-buy:hover i {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+
+
+.text-default:hover {
+    color: orange;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.text-default {
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform:scale(1.03);
+    transition: all 0.5s;
+}
+
+.buy-favorite button{
+    margin:  2px;
+}

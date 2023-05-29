@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --darkblue: #00243F;
+    --white: #D9D9D9;
+    --lightblue: #60D3F8;
+    --lightblue_hover: #28c7fc;
+    --green: #44d58d;
+    --green_hover: #2fa168;
+    --darkgreen: rgb(10, 85, 14);
+  }

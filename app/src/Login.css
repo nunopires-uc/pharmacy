@@ -1,0 +1,54 @@
+
+
+body {
+    background-color: #D9D9D9;
+    
+    /* background-image: url("./img/background.jpg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;*/
+}
+
+
+
+
+
+.card-login {
+    border-radius: 1rem;
+    background-color: var(--white) !important;
+}
+
+.btn-primary {
+    border: 0px solid black !important;
+    background-color: var(--darkblue) !important;
+}
+
+.login-title {
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+.form-label {
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+}
+
+.login-button {
+    background-color: var(--lightblue);
+    border: 0px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    height: 50px;
+    transition: all 0.5s;
+    padding: 5px 50px;
+}
+
+.login-button:hover {
+    transform:scale(1.05);
+    transition: all 0.5s;
+    font-weight: bold;
+}
