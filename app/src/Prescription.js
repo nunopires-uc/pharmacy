@@ -268,7 +268,7 @@ function Prescription() {
                     <div class="d-flex align-items-center">
                         
                         <div class="userdiv">
-                            <h1 class="username">John Pork</h1>
+                            {/*<h1 class="username">John Pork</h1>*/}
                             <h1 class="userrole">Funcionário</h1>
                         </div>
 

@@ -2,8 +2,9 @@ import React from 'react';
 import { createContext, useState, useEffect } from "react";
 import jwt_decode from "jwt-decode";
 import { useNavigate } from "react-router-dom";
+import { url } from '../index';
 
-const api_token = "http://localhost:8000/api/token/";
+
 const api_receita_qrcode = "http://localhost:8000/api/receita-qrcode/";
 const api_receita_pago = "http://localhost:8000/api/inserir-receita-pago/";
 
@@ -26,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     const loginUser = async (username, password, navigate) => {
-        const response = await fetch(api_token, {
+        const response = await fetch(url + "api/token/", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json",

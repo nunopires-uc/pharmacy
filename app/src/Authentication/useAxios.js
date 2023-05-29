@@ -3,14 +3,15 @@ import jwt_decode from 'jwt-decode';
 import dayjs from 'dayjs';
 import { useContext } from 'react';
 import AuthContext from './AuthContext';
+import { url } from '../index';
 
-const baseURL = "http://localhost:8000/api";
+
 
 const useAxios = () => {
 
     const { authTokens, setUser, setAuthTokens } = useContext(AuthContext);
 
-
+    const baseURL = url + "api";
     const axiosInstance = axios.create({
         baseURL,
         headers: { Authorization: `Bearer \${authTokens?.access}` }

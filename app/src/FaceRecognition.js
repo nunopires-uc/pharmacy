@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import * as faceapi from 'face-api.js';
-import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -8,12 +7,13 @@ import { useLocation } from 'react-router-dom';
 import AuthContext from './Authentication/AuthContext';
 import axios from 'axios';
 import { url } from './index';
-
+import { useNavigate } from 'react-router-dom';
 
 const pagarFace = "http://localhost:8000/api/inserir-receita-pago/";
 
 const FaceRecognition = () => {
 
+    const navigate = useNavigate();
     const location = useLocation();
     const receita = location.state?.receita || "No data";
     console.log(receita);
@@ -65,11 +65,8 @@ const FaceRecognition = () => {
             }
             });
             alert('Pagamento feito com sucesso!');
-            return(
-                <div>
-                    <h1>Receita paga com sucesso!</h1>
-                </div>
-            );
+            navigate('/Dashboard')
+            //alert('Pagamento feito com sucesso!');
         } catch (error) {
             // Handle error cases
         }
@@ -85,13 +82,11 @@ const FaceRecognition = () => {
                     .withFaceLandmarks()
                     .withFaceExpressions();
                 if (detections) {
+                    const imageBlob = await captureImageAsBlob(videoEl);
+                    console.log(imageBlob)
                     receita.pago = 1;
                     console.log(receita);
                     sendDataToDjango(receita);
-                    
-
-                    const imageBlob = await captureImageAsBlob(videoEl);
-                    console.log(imageBlob)
                 }
             }, 100);
         };
